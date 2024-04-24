@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rtoasaS2.Vistas.VInicio"
+             Title="VInicio">
+    <VerticalStackLayout>
+        <Label x:Name="lblUser"
+         Text="TAREA"
+         HorizontalTextAlignment="End"         
+         FontSize="14"/>
+        <Label 
+            Text="TAREA"
+            HorizontalTextAlignment="Center"
+            TextColor="Blue"
+            FontSize="24"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry x:Name="txtDato"
+               Placeholder="Ingrese su direccion"
+               MaxLength="10"
+               />
+
+        <Image Source="https://univercimas.com/wp-content/uploads/2021/05/Logo-de-la-Universidad-Tecnologica-Israel-UTI.png" HeightRequest="100"/>
+
+        <Image x:Name="imagen"
+               Source="dotnet_bot.png"
+               HeightRequest="100"/>
+
+        <Picker x:Name="pkCiudades" Title="Ciudades">
+            <Picker.Items>
+                <x:String>Quito</x:String>
+                <x:String>Guayaquil</x:String>
+                <x:String>Cuenca</x:String>
+            </Picker.Items>
+        </Picker>
+        
+        <Button x:Name = "btnPicker"
+                Text= "VerticalOptions elemento"
+                Clicked= "btnPickerClik"
+                />
+
+        <DatePicker x:Name="dpFecha" Date="04/09/2024"
+                    Format="MM/dd/yyyy"/>
+
+        <Label x:Name="lblFecha"
+            FontSize="20"
+                TextColor="Red"/>
+
+        <Button x:Name="btnFecha"
+                Text="Ver fecha"
+                Clicked="btnFechaClick"/>
+
+    </VerticalStackLayout>
+</ContentPage>
